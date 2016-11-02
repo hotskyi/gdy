@@ -28,7 +28,7 @@ bbb 125.54
 aaa 123.52
 aaa 123.52
 ccc 126.36
-[root@gdytest ~]# cat 123.txt | awk '{a[$1] += $2} END{for(i in a)print i,a[i]}'
+[root@gdytest ~]# awk '{a[$1] += $2} END{for(i in a)print i,a[i]}' 123.txt
 aaa 370.56
 bbb 125.54
 ccc 126.36
